@@ -1,0 +1,79 @@
+[
+  {
+    "name": "Nekoyanagi",
+    "group": "OFFICIAL",
+    "text": "SR猫柳本線",
+    "link": "http://www.kronekodow.com/",
+    "icon": "/images/icons/link/nekoyanagi.svg"
+  },
+  {
+    "name": "Youtube | Tokyo Jihen",
+    "group": "OFFICIAL",
+    "text": "東京事変Official YouTube Channel",
+    "link": "https://www.youtube.com/user/incidentstokyoch",
+    "icon": "/images/icons/link/jihen.svg"
+  },
+  {
+    "name": "Universal",
+    "group": "OFFICIAL",
+    "text": "UNIVERSAL MUSIC JAPAN",
+    "link": "https://www.universal-music.co.jp/tokyojihen/",
+    "icon": "/images/icons/link/universal.svg"
+  },
+  {
+    "name": "Sheena Ringo | Special Site",
+    "group": "OFFICIAL",
+    "text": "椎名林檎Special Site",
+    "link": "https://sp.universal-music.co.jp/ringo/",
+    "icon": "/images/icons/link/ringo.svg"
+  },
+  {
+    "name": "Twitter",
+    "group": "SNS",
+    "text": "SR猫柳本線 椎名林檎オフィシャル Twitter",
+    "link": "https://twitter.com/nekoyanagi_line",
+    "icon": "/images/icons/link/twringo.svg"
+  },
+  {
+    "name": "Facebook",
+    "group": "SNS",
+    "text": "椎名林檎Facebookページ",
+    "link": "https://www.facebook.com/kronekodow.sheenaringo/",
+    "icon": "/images/icons/link/fbringo.svg"
+  },
+  {
+    "name": "Itunes",
+    "group": "DOWNLOAD",
+    "text": null,
+    "link": "https://itunes.apple.com/jp/artist/%E6%9D%B1%E4%BA%AC%E4%BA%8B%E5%A4%89/74570585?app=itunes&at=1000lNKS",
+    "icon": "/images/icons/link/itunes.svg"
+  },
+  {
+    "name": "Rekochoku",
+    "group": "DOWNLOAD",
+    "text": null,
+    "link": "https://ck.jp.ap.valuecommerce.com/servlet/referral?vs=2437167&vp=884334991&va=2669415&vc_url=https%3A%2F%2Frecochoku.jp%2Fartist%2F2000001465%2F%3Faffiliate%3D4299010636",
+    "icon": "/images/icons/link/rekochoku.svg"
+  },
+  {
+    "name": "Apple Music",
+    "group": "STREAMING",
+    "text": null,
+    "link": "https://music.apple.com/jp/artist/%E6%9D%B1%E4%BA%AC%E4%BA%8B%E5%A4%89/74570585?at=1000lNKS",
+    "icon": "/images/icons/link/apple.svg"
+  },
+  {
+    "name": "Spotify",
+    "group": "STREAMING",
+    "text": null,
+    "link": "https://open.spotify.com/artist/6KQWWzFLPQbqomJrieHAW5?si=pyJ73lW6Th-IZIsfLDGJew",
+    "icon": "/images/icons/link/spotify.svg"
+  },
+  {
+    "name": "Line Music",
+    "group": "STREAMING",
+    "text": null,
+    "link": "https://music.line.me/artist/mi000000000016807d",
+    "icon": "/images/icons/link/line.svg"
+  }
+]

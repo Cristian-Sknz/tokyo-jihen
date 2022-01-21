@@ -1,0 +1,26 @@
+[
+  {
+    "name": "News",
+    "url": "/"
+  },
+  {
+    "name": "Discography",
+    "url": "/discography"
+  },
+  {
+    "name": "Live",
+    "url": "/live"
+  },
+  {
+    "name": "Biography",
+    "url": "/biography"
+  },
+  {
+    "name": "Link",
+    "url": "/link"
+  },
+  {
+    "name": "Movie",
+    "url": "/movie"
+  }
+]
