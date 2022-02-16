@@ -10,8 +10,8 @@ const DiscographyAlbum = React.lazy(() => import('../pages/discography/album'));
 const DiscographyDvD = React.lazy(() => import('../pages/discography/dvd'));
 const DiscographyOther = React.lazy(() => import('../pages/discography/other'));
 const DiscographyRelease = React.lazy(() => import('../pages/discography/release'));
-const LivePage = React.lazy(() => import('../pages/live'));
-const Biography = React.lazy(() => import('../pages/biography'));
+//const LivePage = React.lazy(() => import('../pages/live'));
+//const Biography = React.lazy(() => import('../pages/biography'));
 const LinkPage = React.lazy(() => import('../pages/link'));
 
 const Routes: React.FC = () => {
@@ -28,8 +28,8 @@ const Routes: React.FC = () => {
           <Route path={'other'} element={<DiscographyOther />} />
         </Route>
 
-        <Route path={'/live'} element={<LivePage/>} />
-        <Route path={'/biography'} element={<Biography/>} />
+        <Route path={'/live'} element={<Loading/>} />
+        <Route path={'/biography'} element={<Loading/>} />
         <Route path={'/link'} element={<LinkPage/>} />
         <Route path={'/movie'} element={<Loading/>} />
         <Route path={'/417'} element={<Loading/>} />
