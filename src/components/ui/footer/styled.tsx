@@ -29,11 +29,19 @@ export const TokyoIncidentsLogo = styled.img`
     filter: contrast(0.3) brightness(5);
     transition: 1s;
   }
+  @media screen and (max-width: 768px) {
+    position: unset;
+  }
 `;
 
 export const NavigationBar = styled.nav`
   display: flex;
+  z-index: 3;
   user-select: none;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const NavigationItems = styled.ul``;

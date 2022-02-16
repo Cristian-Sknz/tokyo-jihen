@@ -8,6 +8,7 @@ export const Main = styled.main`
   z-index: 3;
   overflow: auto;
   width: 100%;
+  position: relative;
 `;
 
 export const MainWithScrollbar = styled(Main)`

@@ -3,6 +3,7 @@ import { Routes as ReactRoutes, Route } from 'react-router-dom';
 import Loading from '../components/template/loading';
 import NotFound from '../pages/notfound';
 
+const News = React.lazy(() => import('../pages/news'));
 const Discography = React.lazy(() => import('../pages/discography'));
 const DiscographySingle = React.lazy(() => import('../pages/discography/single'));
 const DiscographyAlbum = React.lazy(() => import('../pages/discography/album'));
@@ -17,7 +18,7 @@ const Routes: React.FC = () => {
   return (
     <React.Suspense fallback={<Loading/>}>
       <ReactRoutes>
-        <Route path={'/'} element={<p>News</p>} />
+        <Route path={'/'} element={<News/>} />
 
         <Route path={'/discography'} element={<Discography />}>
           <Route path={''} element={<DiscographyRelease/>} />
