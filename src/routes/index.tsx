@@ -19,7 +19,7 @@ const Routes: React.FC = () => {
       <ReactRoutes>
         <Route path={'/'} element={<p>News</p>} />
 
-        <Route path={'/discsography'} element={<Discography />}>
+        <Route path={'/discography'} element={<Discography />}>
           <Route path={''} element={<DiscographyRelease/>} />
           <Route path={'single'} element={<DiscographySingle />} />
           <Route path={'album'} element={<DiscographyAlbum />} />
