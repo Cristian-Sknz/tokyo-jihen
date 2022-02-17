@@ -1,26 +1,32 @@
 [
   {
     "name": "News",
-    "url": "/"
+    "url": "/",
+    "external": false
   },
   {
     "name": "Discography",
-    "url": "/discography"
+    "url": "/discography",
+    "external": false
   },
   {
     "name": "Live",
-    "url": "/live"
+    "url": "/live",
+    "external": false
   },
   {
     "name": "Biography",
-    "url": "/biography"
+    "url": "/biography",
+    "external": false
   },
   {
     "name": "Link",
-    "url": "/link"
+    "url": "/link",
+    "external": false
   },
   {
     "name": "Movie",
-    "url": "/movie"
+    "url": "https://www.youtube.com/user/incidentstokyoch",
+    "external": true
   }
 ]

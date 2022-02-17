@@ -31,7 +31,6 @@ const Routes: React.FC = () => {
         <Route path={'/live'} element={<LivePage/>} />
         <Route path={'/biography'} element={<Loading/>} />
         <Route path={'/link'} element={<LinkPage/>} />
-        <Route path={'/movie'} element={<Loading/>} />
         <Route path={'/417'} element={<Loading/>} />
         <Route path={'*'} element={<NotFound />} />
       </ReactRoutes>

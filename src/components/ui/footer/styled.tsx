@@ -1,7 +1,7 @@
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link, LinkProps } from 'react-router-dom';
-import styled, { keyframes } from 'styled-components';
+import styled, { css, keyframes } from 'styled-components';
 import logo from '../../../logo.svg';
 
 export const FooterContainer = styled.footer`
@@ -52,11 +52,12 @@ const NavigationItemContainer = styled.li`
   cursor: pointer;
 `;
 
-const NavigationLink = styled(Link)`
+const LinkStyle = css`
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 0.2rem;
+  background-color: #666;
 
   min-width: 25px;
   min-height: 25px;
@@ -71,7 +72,6 @@ const NavigationLink = styled(Link)`
   }
 
   & {
-    background-color: #666;
     :hover {
       background-color: #bb0000;
       transition: 500ms;
@@ -82,10 +82,28 @@ const NavigationLink = styled(Link)`
   }
 `;
 
-export const NavigationItem: React.FC<LinkProps> = (props) => {
+const NavigationLink = styled(Link)`
+  ${LinkStyle}
+`;
+
+const ExternalLink = styled.a`
+  ${LinkStyle}
+`;
+
+type NavItemProps = LinkProps & {
+  isExternal: boolean;
+};
+
+export const NavigationItem: React.FC<NavItemProps> = (props) => {
   return (
     <NavigationItemContainer>
-      <NavigationLink {...props}>{props.children}</NavigationLink>
+      {props.isExternal ? (
+        <ExternalLink href={props.to as string} target={'_blank'} rel={'noreferrer'}>
+          {props.children}
+        </ExternalLink>
+      ) : (
+        <NavigationLink {...props}>{props.children}</NavigationLink>
+      )}
     </NavigationItemContainer>
   );
 };

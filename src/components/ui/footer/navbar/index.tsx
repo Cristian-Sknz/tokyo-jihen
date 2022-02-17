@@ -29,6 +29,7 @@ const Navbar: React.FC = () => {
             to={item.url.toLowerCase()}
             onMouseEnter={changeDisplay(item.name)}
             onMouseLeave={changeDisplay(null)}
+            isExternal={item.external}
           >
             {index + 1}
           </NavigationItem>
