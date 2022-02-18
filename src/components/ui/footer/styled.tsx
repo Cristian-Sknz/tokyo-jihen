@@ -1,8 +1,8 @@
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Link, LinkProps } from 'react-router-dom';
-import styled, { css, keyframes } from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import logo from '../../../logo.svg';
+import LinkElement from '../../template/link';
 
 export const FooterContainer = styled.footer`
   display: flex;
@@ -46,14 +46,14 @@ export const NavigationBar = styled.nav`
 
 export const NavigationItems = styled.ul``;
 
-const NavigationItemContainer = styled.li`
+export const NavigationItemContainer = styled.li`
   display: inline-block;
   margin: 0 0.12rem;
   cursor: pointer;
 `;
 
-const LinkStyle = css`
-  display: flex;
+export const NavigationLink = styled(LinkElement)`
+    display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 0.2rem;
@@ -81,32 +81,6 @@ const LinkStyle = css`
     }
   }
 `;
-
-const NavigationLink = styled(Link)`
-  ${LinkStyle}
-`;
-
-const ExternalLink = styled.a`
-  ${LinkStyle}
-`;
-
-type NavItemProps = LinkProps & {
-  isExternal: boolean;
-};
-
-export const NavigationItem: React.FC<NavItemProps> = (props) => {
-  return (
-    <NavigationItemContainer>
-      {props.isExternal ? (
-        <ExternalLink href={props.to as string} target={'_blank'} rel={'noreferrer'}>
-          {props.children}
-        </ExternalLink>
-      ) : (
-        <NavigationLink {...props}>{props.children}</NavigationLink>
-      )}
-    </NavigationItemContainer>
-  );
-};
 
 export const NavigationDisplay = styled.div`
   display: flex;
@@ -157,18 +131,18 @@ const SocialMediaItem = styled.li`
   }
 
   &.menu {
+    cursor: pointer;
     animation: ${menuAnimation} 3s infinite;
   }
 `;
 
 type SocialProps = {
-  className?: string;
   icon: IconDefinition;
-};
+} & React.HTMLAttributes<HTMLElement>;
 
 export const SocialMedia: React.FC<SocialProps> = (props) => {
   return (
-    <SocialMediaItem className={props.className}>
+    <SocialMediaItem {...props}>
       <FontAwesomeIcon icon={props.icon} />
     </SocialMediaItem>
   );

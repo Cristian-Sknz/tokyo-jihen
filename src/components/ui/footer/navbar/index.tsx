@@ -7,9 +7,21 @@ import classnames from 'classnames'
 import {
   NavigationBar,
   NavigationDisplay,
-  NavigationItem,
+  NavigationItemContainer,
   NavigationItems,
+  NavigationLink,
 } from '../styled';
+import { LinkElementProps } from '../../../template/link';
+
+export const NavbarItem: React.FC<LinkElementProps> = (props) => {
+  return (
+    <NavigationItemContainer>
+      <NavigationLink {...props}>
+        {props.children}
+      </NavigationLink>
+    </NavigationItemContainer>
+  );
+};
 
 const Navbar: React.FC = () => {
   const [active, setActive] = useState<string | null>(null);
@@ -23,16 +35,16 @@ const Navbar: React.FC = () => {
     <NavigationBar>
       <NavigationItems>
         {Routes.map((item, index) => (
-          <NavigationItem
-            className={classnames({'active': getRoute() === item})}
+          <NavbarItem
             key={item.name}
+            className={classnames({'active': getRoute() === item})}
             to={item.url.toLowerCase()}
             onMouseEnter={changeDisplay(item.name)}
             onMouseLeave={changeDisplay(null)}
             isExternal={item.external}
           >
             {index + 1}
-          </NavigationItem>
+          </NavbarItem>
         ))}
       </NavigationItems>
       <NavigationDisplay>{(active) ? active : getRoute().name}</NavigationDisplay>
