@@ -6,12 +6,17 @@ import LinkElement from '../../template/link';
 
 export const FooterContainer = styled.footer`
   display: flex;
-  position: relative;
 
   align-items: center;
   justify-content: space-between;
   margin: 0 2.2rem;
+  z-index: 10;
   grid-area: footer;
+
+  
+  @media screen and (max-width: 800px) {
+    margin: 0 5%;
+  }
 `;
 
 export const TokyoIncidentsLogo = styled.img`
@@ -53,7 +58,7 @@ export const NavigationItemContainer = styled.li`
 `;
 
 export const NavigationLink = styled(LinkElement)`
-    display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 0.2rem;
@@ -100,7 +105,9 @@ export const NavigationDisplay = styled.div`
   border: 3px solid #6b6b6b;
 `;
 
-export const SocialMediasList = styled.ul``;
+export const SocialMediasList = styled.ul`
+  z-index: 10;
+`;
 const menuAnimation = keyframes`
   0% {
     color: #ff8989;
@@ -133,6 +140,12 @@ const SocialMediaItem = styled.li`
   &.menu {
     cursor: pointer;
     animation: ${menuAnimation} 3s infinite;
+
+    @media screen and (max-width: 768px) {
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+    }
   }
 `;
 

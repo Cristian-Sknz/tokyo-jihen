@@ -36,4 +36,7 @@ export const DiscographyTitle = styled.h1`
   text-transform: uppercase;
   vertical-align: top;
   font-weight: 300;
+  @media screen and (max-width: 375px) {
+    font-size: 1.4rem;
+  }
 `

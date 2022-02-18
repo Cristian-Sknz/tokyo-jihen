@@ -3,10 +3,18 @@ import styled from 'styled-components';
 import { Link, LinkProps } from 'react-router-dom';
 
 import { WidthLimiter } from '../../styles';
+import PageHeader from '../../components/template/page-title/header';
 
 export const DiscographyContainer = styled.div`
   background-color: #292929;
 `;
+
+export const DiscographyTitle = styled(PageHeader)`
+  background-color: white;
+  @media (max-width: 340px) {
+    font-size: 1.3rem;
+  }
+`
 
 export const DiscographyNavbar = styled.nav``;
 
@@ -32,6 +40,13 @@ const StyledNavbarItem = styled.li`
     }
     width: calc(50% - 20px);
     margin: .3rem 0;
+  }
+  
+  @media (max-width: 340px) {
+    :first-child {
+      width: 100%;
+    }
+    width: 100%;
   }
 `;
 

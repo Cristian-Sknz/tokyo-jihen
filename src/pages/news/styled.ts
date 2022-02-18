@@ -7,9 +7,15 @@ export const NewsContainer = styled.div`
 export const NewsImageContainer = styled.div``;
 export const NewsImage = styled.img`
   width: 90%;
-  max-width: 1000px;
+  height: 100%;
+  max-width: 520px;
   display: block;
   margin: 0 auto;
+  object-fit: cover;
+
+  @media screen and (max-width: 800px) {
+    max-width: 600px;
+  }
 `;
 
 export const NewsList = styled.ul``;
@@ -20,7 +26,7 @@ export const PlayIcon = styled.div`
   margin-right: 0.5rem;
   display: inline-block;
   background-color: white;
-  
+
   border-radius: 50%;
   position: relative;
   display: flex;
@@ -28,7 +34,7 @@ export const PlayIcon = styled.div`
   justify-content: center;
   * {
     color: #333;
-    font-size: .6rem;
+    font-size: 0.6rem;
   }
 `;
 
@@ -39,10 +45,10 @@ export const NewsListItem = styled.li`
   padding: 1.7rem;
   border-bottom: 1px solid #666;
   cursor: pointer;
-  transition: .5s;
+  transition: 0.5s;
   :hover {
     background-color: #444;
-    transition: .5s;
+    transition: 0.5s;
   }
 `;
 
@@ -50,9 +56,9 @@ export const NewsTitle = styled.h3`
   color: white;
   font-family: Noto Sans JP, sans-serif;
   font-size: 1.05rem;
-  letter-spacing: .05rem;
+  letter-spacing: 0.05rem;
   font-weight: 400;
-`
+`;
 
 export const NewsDate = styled.span`
   color: white;

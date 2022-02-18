@@ -13,6 +13,10 @@ const GridContainer = styled.div`
     "left footer right"; 
   padding: .5rem;
   height: 100vh;
+  @media screen and (max-width: 800px) {
+    grid-template-columns: 2px 1fr 2px; 
+    grid-template-rows: 2px 1fr 70px; 
+  }
 `;
 
 export default GridContainer;

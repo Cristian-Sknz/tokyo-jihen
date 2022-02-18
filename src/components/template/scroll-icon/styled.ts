@@ -51,9 +51,9 @@ export const ScrollText = styled.span`
   ${ScrollBefore}
   --spacing: .3rem;
   position: absolute;
-  top: 70%;
+  top: 75%;
   transform: rotate(90deg);
-  right: calc(var(--spacing) * -2);
+  right: calc(var(--spacing) * -5);
   
   font-family: Roboto;
   font-size: 14px;

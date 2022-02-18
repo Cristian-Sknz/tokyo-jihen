@@ -1,11 +1,11 @@
 import React, { Fragment } from 'react';
 import { Outlet, useHref } from 'react-router-dom';
 import Loading from '../../components/template/loading';
-import PageHeader from '../../components/template/page-title/header';
 import {
   DiscographyNavbar,
   NavbarList,
   NavbarItem,
+  DiscographyTitle
 } from './styled';
 
 const Discography: React.FC = () => {
@@ -13,7 +13,7 @@ const Discography: React.FC = () => {
 
   return (
     <Fragment>
-      <PageHeader title='Discography'>
+      <DiscographyTitle title='Discography'>
         <DiscographyNavbar>
           <NavbarList>
             <NavbarItem to={`${href}`}>New Release</NavbarItem>
@@ -25,7 +25,7 @@ const Discography: React.FC = () => {
             <NavbarItem to={`${href}/other`}>Other</NavbarItem>
           </NavbarList>
         </DiscographyNavbar>
-      </PageHeader>
+      </DiscographyTitle>
       <React.Suspense fallback={<Loading withBottom/>}>
         <Outlet />
       </React.Suspense>

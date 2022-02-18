@@ -9,7 +9,7 @@ const PageTitle: React.FC<PageTitleProps> = ({ children }) => {
   return (
     <TitleContainer>
       <TokyoIncidentsLogo alt='Tokyo Jihen Logo'/>
-      <DiscographyTitle>{children}</DiscographyTitle>
+      <DiscographyTitle title={(typeof children == "string") ? children as string : 'hi'}>{children}</DiscographyTitle>
     </TitleContainer>
   );
 };

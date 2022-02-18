@@ -9,6 +9,10 @@ export const Main = styled.main`
   overflow: auto;
   width: 100%;
   position: relative;
+
+  @media screen and (max-width: 800px) {
+    border: 0.2rem solid #777;
+  }
 `;
 
 export const MainWithScrollbar = styled(Main)`
@@ -21,8 +25,14 @@ export const MainWithScrollbar = styled(Main)`
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: #333;
-    border: 3px solid #333;
+    background-color: #222;
+    border: 3px solid #222;
     border-radius: 20px;
+  }
+
+  @media screen and (max-width: 800px) {
+    ::-webkit-scrollbar {
+      width: 0.3rem;
+    }
   }
 `;
