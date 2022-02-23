@@ -1,0 +1,61 @@
+{
+  "image": "/images/biography/bio_image.jpg",
+  "description": "2004年、椎名林檎が東京事変の活動を表明。 フジロックフェスティバルに初参戦、ホワイトステージのヘッドライナーを務め、入場規制がかかるほどの衆目を集める。\nデビューシングル「群青日和」、1stアルバム『教育』をリリース。 05年、伊澤一葉(Key.)と浮雲(G.)が参加、現メンバーが揃い制作した2ndアルバム『大人(アダルト)』がチャート第一位を獲得。 06年、08年には複数のアーティストを招いてのイベント「SOCIETY OF THE CITIZENS」を主宰した。 07年3rdアルバム『娯楽(バラエティ)』、10年4thアルバム『スポーツ』、11年5thアルバム『大発見』とテレビのチャンネル名を冠したオリジナルアルバムをリリース。\n2012年1月解散を発表。 メンバー全員が夫々作詞作曲した楽曲を持ち寄ったラストアルバム『color bars』リリース。 2月に「東京事変live tour 2012 Domestique Bon Voyage」を開催、2月29日の日本武道館公演をもって活動を終了する。",
+  "members": [
+    {
+      "name": "椎名林檎",
+      "name_romanized": "Sheena Ringo",
+      "image": "/images/biography/members/ringo.jpg",
+      "nickname": "シイナリンゴ",
+      "birthdate": "1978年11月25日生まれ",
+      "birthplace": "福岡市出身",
+      "member": "vox",
+      "japanese_zodiac": "午年",
+      "bio": "1998年デビュー　2000年リリースの2ndアルバムが250万枚を超えるセールスを記録。04-12年、東京事変の活動を並行。CMやTVドラマ、映画、舞台の音楽制作、アーティストへの楽曲提供/プロデュースなども精力的に行っている。16年、リオオリンピック・パラリンピック閉会式に於ける東京2020への引き継ぎセレモニーで演出/音楽監督を務め、国内外から高く評価された。17年、東京2020開会式・閉会式 4式典総合プランニングチームのメンバーに就任。19年、オリジナルアルバム「三毒史」、及びベストアルバム『ニュートンの林檎 ～初めてのベスト盤～』をリリース。"
+    },
+    {
+      "name": "亀田誠治",
+      "name_romanized": "Seiji Kameda",
+      "image": "/images/biography/members/kameda.jpg",
+      "nickname": "カメダセイジ",
+      "birthdate": "1964年6月3日生まれ",
+      "birthplace": "NY出身",
+      "member": "bass",
+      "japanese_zodiac": "辰年",
+      "bio": "89年、アレンジャー、プロデューサー、ベースプレイヤーとして活動を始める。\nこれまでに椎名林檎、平井堅、スピッツ、GLAY、いきものがかり、JUJU、大原櫻子、GLIM SPANKY、山本彩、石川さゆり、MISIAなどのプロデュース、アレンジを手がけ、2007年・2015年に日本レコード大賞編曲賞を受賞。\n2009年、2013年に自身初の主催イベント「亀の恩返し」を開催。\n2019年、フリーイベント「日比谷音楽祭」を手掛け10万人を動員。2020年には第2回目の開催を予定。\n近年では様々なコンテンツを通じて次世代へ音楽の素晴らしさを伝えている。"
+    },
+    {
+      "name": "刄田綴色",
+      "name_romanized": "Hata Toshiki",
+      "image": "/images/biography/members/hata.jpg",
+      "nickname": "ハタトシキ",
+      "birthdate": "1976年10月5日生まれ",
+      "birthplace": "島根県出身",
+      "member": "drums",
+      "japanese_zodiac": "辰年",
+      "bio": "幼少よりお神楽、和太鼓に親しむ。中学・高校とブラスバンド部に在籍(Perc担当)。18歳で上京。多くのアマチュアバンドでドラム、パーカッションを掛け持つ。2003年、椎名林檎の実演ツアー「雙六エクスタシー」に参加。翌2004年、椎名らと共に東京事変の活動を開始。\nヒグチアイ Love RADWIMPSなど多くのレコーディング、ライブサポートを務めている。"
+    },
+    {
+      "name": "浮雲",
+      "name_romanized": "Ryosuke Nagaoka",
+      "image": "/images/biography/members/ukigumo.jpg",
+      "nickname": "ウキグモ",
+      "birthdate": "1978年10月7日生まれ",
+      "birthplace": "千葉市出身",
+      "member": "guitar",
+      "japanese_zodiac": "午年",
+      "bio": "ギタリスト、他。 2002年椎名林檎のアルバム『加爾基 精液 栗ノ花』にギタリストとして参加。アナログ盤にのみ収録された「映日紅の花」の楽曲提供を経て2005年より東京事変に参加。"
+    },
+    {
+      "name": "伊澤一葉",
+      "name_romanized": "Ichiyo Izawa",
+      "image": "/images/biography/members/izawa.jpg",
+      "nickname": "イザワイチヨウ",
+      "birthdate": "1976年7月4日生まれ",
+      "birthplace": "倉敷市出身",
+      "member": "key",
+      "japanese_zodiac": "辰年",
+      "bio": "2004年　バンドあっぱを結成\n2005年　東京事変に加入\n2009年　the HIATUSに加入\n様々なアーティストに楽曲提供、\nサポートも務める\nソロとしても活動中\n\nhttp://izawaichiyo.com/"
+    }
+  ]
+}

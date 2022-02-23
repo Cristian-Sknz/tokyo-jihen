@@ -11,7 +11,7 @@ const DiscographyDvD = React.lazy(() => import('../pages/discography/dvd'));
 const DiscographyOther = React.lazy(() => import('../pages/discography/other'));
 const DiscographyRelease = React.lazy(() => import('../pages/discography/release'));
 const LivePage = React.lazy(() => import('../pages/live'));
-//const Biography = React.lazy(() => import('../pages/biography'));
+const Biography = React.lazy(() => import('../pages/biography'));
 const LinkPage = React.lazy(() => import('../pages/link'));
 
 const Routes: React.FC = () => {
@@ -21,7 +21,7 @@ const Routes: React.FC = () => {
         <Route path={'/'} element={<News/>} />
 
         <Route path={'/discography'} element={<Discography />}>
-          <Route path={''} element={<DiscographyRelease/>} />
+          <Route element={<DiscographyRelease/>} />
           <Route path={'single'} element={<DiscographySingle />} />
           <Route path={'album'} element={<DiscographyAlbum />} />
           <Route path={'dvd'} element={<DiscographyDvD />} />
@@ -29,7 +29,7 @@ const Routes: React.FC = () => {
         </Route>
 
         <Route path={'/live'} element={<LivePage/>} />
-        <Route path={'/biography'} element={<Loading/>} />
+        <Route path={'/biography'} element={<Biography/>} />
         <Route path={'/link'} element={<LinkPage/>} />
         <Route path={'/417'} element={<Loading/>} />
         <Route path={'*'} element={<NotFound />} />

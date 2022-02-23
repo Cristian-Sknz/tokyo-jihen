@@ -1,16 +1,15 @@
 import React from 'react';
 import PageHeader from '../../components/template/page-title/header';
 import ScrollIcon from '../../components/template/scroll-icon';
-import { NewsContainer, NewsImage, NewsImageContainer, NewsList } from './styled';
+import { NewsContainer, NewsList } from './styled';
 import NewsJson from '../../assets/news.json';
 import NewsItem from './news-item';
+import NewsImage from '../../components/template/page-image';
 
 const News: React.FC = () => {
   return (
     <NewsContainer>
-      <NewsImageContainer>
-        <NewsImage src={'/images/news/news_image.png'} />
-      </NewsImageContainer>
+      <NewsImage src={'/images/news/news_image.png'} alt={'Tokyo Jihen News Wallpaper'} loading={'eager'}/>
       <ScrollIcon />
       <PageHeader title='News' />
       <NewsList>

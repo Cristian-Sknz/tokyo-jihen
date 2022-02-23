@@ -4,20 +4,6 @@ export const NewsContainer = styled.div`
   background-color: #292929;
 `;
 
-export const NewsImageContainer = styled.div``;
-export const NewsImage = styled.img`
-  width: 90%;
-  height: 100%;
-  max-width: 520px;
-  display: block;
-  margin: 0 auto;
-  object-fit: cover;
-
-  @media screen and (max-width: 800px) {
-    max-width: 600px;
-  }
-`;
-
 export const NewsList = styled.ul``;
 
 export const PlayIcon = styled.div`

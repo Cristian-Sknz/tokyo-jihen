@@ -13,7 +13,6 @@ export const FooterContainer = styled.footer`
   z-index: 10;
   grid-area: footer;
 
-  
   @media screen and (max-width: 800px) {
     margin: 0 5%;
   }
@@ -130,14 +129,7 @@ const SocialMediaItem = styled.li`
     border-radius: 1rem;
   }
 
-  color: #666;
-  transition: 450ms;
-  :hover {
-    color: #fff;
-    transition: 450ms;
-  }
-
-  &.menu {
+  &.menu a {
     cursor: pointer;
     animation: ${menuAnimation} 3s infinite;
 
@@ -145,18 +137,48 @@ const SocialMediaItem = styled.li`
       position: absolute;
       top: 2rem;
       right: 2rem;
+
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 2px;
     }
+  }
+`;
+
+export const SocialMediaLink = styled.a`
+  color: #666;
+  transition: 450ms;
+  :hover {
+    color: #fff;
+    transition: 450ms;
   }
 `;
 
 type SocialProps = {
   icon: IconDefinition;
+  href?: string;
 } & React.HTMLAttributes<HTMLElement>;
 
-export const SocialMedia: React.FC<SocialProps> = (props) => {
+export const SocialMedia: React.FC<SocialProps> = ({ children, ...props }) => {
   return (
     <SocialMediaItem {...props}>
-      <FontAwesomeIcon icon={props.icon} />
+      <SocialMediaLink href={props.href} rel='noreferrer' target={'_blank'}>
+        <FontAwesomeIcon icon={props.icon} />
+        {children}
+      </SocialMediaLink>
     </SocialMediaItem>
   );
 };
+
+export const MenuText = styled.span`
+  display: none;
+  font-size: 0.48rem;
+  color: white;
+  font-family: Roboto;
+  text-transform: uppercase;
+
+  @media screen and (max-width: 768px) {
+    display: inline-block;
+  }
+`;
