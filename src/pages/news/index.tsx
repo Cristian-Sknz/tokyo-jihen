@@ -9,7 +9,7 @@ import NewsImage from '../../components/template/page-image';
 const News: React.FC = () => {
   return (
     <NewsContainer>
-      <NewsImage src={'/images/news/news_image.png'} alt={'Tokyo Jihen News Wallpaper'} loading={'eager'}/>
+      <NewsImage src={'/images/news/news_image_spaced.png'} alt={'Tokyo Jihen News Wallpaper'} loading={'eager'}/>
       <ScrollIcon />
       <PageHeader title='News' />
       <NewsList>
