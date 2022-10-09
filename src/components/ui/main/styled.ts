@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { ScrollbarCSS } from '../../../styles';
 
 export const Main = styled.main`
   background-color: #292929;
@@ -16,23 +17,5 @@ export const Main = styled.main`
 `;
 
 export const MainWithScrollbar = styled(Main)`
-  ::-webkit-scrollbar {
-    width: 0.6rem;
-  }
-
-  ::-webkit-scrollbar-track {
-    background: #777;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background-color: #222;
-    border: 3px solid #222;
-    border-radius: 20px;
-  }
-
-  @media screen and (max-width: 800px) {
-    ::-webkit-scrollbar {
-      width: 0.3rem;
-    }
-  }
+  ${ScrollbarCSS}
 `;

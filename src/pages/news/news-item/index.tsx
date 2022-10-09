@@ -10,11 +10,12 @@ type NewsItemType = {
 
 type NewsProps = {
   item: NewsItemType;
+  onClick?(): void
 };
 
 const NewsItem: React.FC<NewsProps> = (props) => {
   return (
-    <NewsListItem>
+    <NewsListItem onClick={props.onClick}>
       <PlayIcon>
         <FontAwesomeIcon icon={faPlay}></FontAwesomeIcon>
       </PlayIcon>
