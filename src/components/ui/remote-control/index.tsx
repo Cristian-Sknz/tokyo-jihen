@@ -33,7 +33,7 @@ const NavbarItem: React.FC<NavbarItemProps> = (props) => {
 };
 
 const RemoteControl: React.FC = () => {
-  const { open, toggle } = useRemoteControl();
+  const { open, misc } = useRemoteControl();
   return (
     <RemoteControlContainer className={classNames({'active': open})}>
       <ButtonsContainer>
@@ -41,7 +41,7 @@ const RemoteControl: React.FC = () => {
         <ControlNavbar>
           <NavbarList>
             {Routes.map((item) => (
-              <NavbarItem key={item.name} item={item} onClick={toggle}/>
+              <NavbarItem key={item.name} item={item} onClick={misc.btn.current.onClick}/>
             ))}
           </NavbarList>
         </ControlNavbar>

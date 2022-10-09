@@ -1,6 +1,5 @@
 import React, { useCallback, useEffect, useImperativeHandle, useState } from 'react';
-import { CloseButton, PopupContainer } from './styled';
-import { faTimes } from '@fortawesome/free-solid-svg-icons';
+import { PopupContainer } from './styled';
 import Markdown from '../../markdown';
 import { useRemoteControl } from '../../remote-control/context';
 import classNames from 'classnames';
@@ -17,11 +16,15 @@ const Popup: PopupComponent = (props, ref) => {
   const [visible, setVisible] = useState<boolean>(false);
   const [markdown, setMarkdown] = useState<string>('');
   const [isLoading, setLoading] = useState<boolean>(true);
-  const { misc } = useRemoteControl();
+  const { misc, toggle } = useRemoteControl();
 
   useEffect(() => {
-    return () => misc.setOverflow(true)
-  }, [])
+    return () => {
+      toggle()
+      misc.setOverflow(true)
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [toggle])
 
   const fetchMarkdown = useCallback(async (id: number) => {
     setLoading(true);
@@ -31,17 +34,19 @@ const Popup: PopupComponent = (props, ref) => {
   }, []);
 
   const close = useCallback(() => {
+    toggle()
     setVisible(false);
     misc.setOverflow(true);
-  }, [misc]);
+  }, [misc, toggle]);
 
   const open = useCallback(
     (id: number) => {
       fetchMarkdown(id);
+      toggle(close)
       setVisible(true);
       misc.setOverflow(false);
     },
-    [fetchMarkdown, misc]
+    [fetchMarkdown, misc, toggle, close]
   );
 
   useImperativeHandle(ref, () => {
@@ -53,7 +58,6 @@ const Popup: PopupComponent = (props, ref) => {
       className={classNames({ visible })}
       style={{ top: `${misc.main.current?.scrollTop || 0}px` }}
     >
-      <CloseButton onClick={close} className={'menu'} icon={faTimes} />
       {isLoading ? <Loading /> : <Markdown>{markdown}</Markdown>}
     </PopupContainer>
   );

@@ -129,6 +129,24 @@ const SocialMediaItem = styled.li`
     border-radius: 1rem;
   }
 
+  &.popup a {
+    cursor: pointer;
+    animation: ${menuAnimation} 3s infinite;
+    position: absolute;
+    top: 5rem;
+    right: 5.5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2px;
+
+    @media screen and (max-width: 800px) {
+      top: 2rem;
+      right: 2rem;
+    }
+  }
+
   &.menu a {
     cursor: pointer;
     animation: ${menuAnimation} 3s infinite;
@@ -177,6 +195,10 @@ export const MenuText = styled.span`
   color: white;
   font-family: Roboto;
   text-transform: uppercase;
+
+  &.popup {
+    display: inline-block;
+  }
 
   @media screen and (max-width: 768px) {
     display: inline-block;
