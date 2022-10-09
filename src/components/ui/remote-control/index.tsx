@@ -25,7 +25,7 @@ const NavbarItem: React.FC<NavbarItemProps> = (props) => {
   const { getRoute } = useRouteName();
   return (
     <NavbarListItem {...props} className={classNames({'active': getRoute() === props.item})}>
-      <LinkElement to={props.item.url} isExternal={props.item.external}>
+      <LinkElement to={props.item.url} external={props.item.external}>
         {props.item.name}
       </LinkElement>
     </NavbarListItem>

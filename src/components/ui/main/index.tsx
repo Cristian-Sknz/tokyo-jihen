@@ -1,4 +1,6 @@
 import React from 'react';
+import classNames from 'classnames';
+import { useRemoteControl } from '../remote-control/context';
 import { MainWithScrollbar } from './styled';
 
 type MainProps = {
@@ -6,7 +8,15 @@ type MainProps = {
 };
 
 const Main: React.FC<MainProps> = ({ children }) => {
-  return <MainWithScrollbar>{children}</MainWithScrollbar>;
+  const { misc: { overflow, main } } = useRemoteControl();
+
+  return (
+    <MainWithScrollbar 
+      className={classNames({ overflow })} 
+      ref={main}>
+      {children}
+    </MainWithScrollbar>
+  );
 };
 
 export default Main;

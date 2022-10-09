@@ -2,11 +2,11 @@ import React from 'react';
 import { Link, LinkProps } from 'react-router-dom';
 
 export type LinkElementProps = LinkProps & React.RefAttributes<HTMLAnchorElement> & {
-  isExternal: boolean;
+  external: boolean;
 };
 
 const LinkElement: React.FC<LinkElementProps> = (props) => {
-  if (props.isExternal) {
+  if (props.external) {
     return (
       <a {...props} 
         href={props.to as string} 
