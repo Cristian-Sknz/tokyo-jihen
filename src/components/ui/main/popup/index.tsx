@@ -28,7 +28,7 @@ const Popup: PopupComponent = (props, ref) => {
 
   const fetchMarkdown = useCallback(async (id: number) => {
     setLoading(true);
-    const response = await fetch(`/content/${id}.md`);
+    const response = await fetch(`/content/news/${id}.md`);
     setLoading(false);
     setMarkdown(await response.text());
   }, []);

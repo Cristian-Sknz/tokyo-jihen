@@ -28,7 +28,8 @@ const HeadingLink = styled.a`
 
 function Heading(as: HeadingType): HeadingComponent {
   return ({ children, node, ...props }) => {
-    const id = typeof children[0] === 'string'
+    const id =
+      typeof children[0] === 'string'
         ? children[0]
             .toString()
             .toLowerCase()
@@ -37,7 +38,9 @@ function Heading(as: HeadingType): HeadingComponent {
             .replace(/\s/g, '-')
         : undefined;
 
-    return React.createElement(as, {...props, id: id },
+    return React.createElement(
+      as,
+      { ...props, id: id },
       <HeadingLink href={`#${id}`}>
         <>{children}</>
       </HeadingLink>
@@ -60,6 +63,33 @@ const MarkdownLink: MDComponents['a'] = ({ node, ...props }) => {
   );
 };
 
+const Blockquote = styled.blockquote`
+  display: flex;
+  flex-direction: column;
+  background: #22232696;
+  padding: 0.1rem 0.4rem;
+  padding-left: 0;
+  gap: 0.3rem;
+  border-radius: 0.2rem;
+  p {
+    color: white;
+    ::before {
+      content: '※';
+      margin: 0;
+      display: inline-block;
+      color: #ff9e1e;
+      border-radius: 0.8rem;
+      margin-right: 0.5rem;
+    }
+  }
+  & a {
+    color: #62ff58;
+  }
+  br {
+    display: none;
+  }
+`;
+
 export const Components: MDComponents = toComponents({
   h1: styled(Heading('h1'))`
     font-weight: 600;
@@ -76,12 +106,37 @@ export const Components: MDComponents = toComponents({
     font-size: 1.2rem;
     margin-bottom: 2rem;
   `,
+  h4: styled(Heading('h4'))`
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin: 0.5rem;
+    margin-left: 0;
+  `,
+  h5: styled(Heading('h5'))`
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 0.5rem;
+    margin-left: 0;
+  `,
   p: styled.p`
     display: inline-block;
     line-height: 1.7;
   `,
   strong: styled.strong`
     font-weight: 500;
+  `,
+  ol: styled.ol`
+    display: flex;
+    flex-direction: column;
+    list-style: decimal;
+
+    gap: 0.5rem;
+    padding-left: 1.8rem;
+    margin-top: 0.4rem;
+    padding-left: 1.8rem;
+    li::marker {
+      color: #bcbcbe;
+    }
   `,
   ul: styled.ul`
     display: flex;
@@ -123,29 +178,16 @@ export const Components: MDComponents = toComponents({
       color: #4db8a8;
     }
   `,
-  blockquote: styled.blockquote`
-    display: flex;
-    align-items: center;
-    & p {
-      background: #22232696;
-      color: white;
-      border-radius: 0.2rem;
-      padding: 0.1rem 0.4rem;
+  blockquote: (props: any) => {
+    function values() {
+      const childs = props.children[1].props.children as [];
+      return childs.map((value, index) => {
+        return typeof value === 'string' ? <p key={index}>{value}</p> : value;
+      });
     }
-    & a {
-      color: #62ff58;
-    }
-    ::before {
-      content: '';
-      margin: 0;
-      display: inline-block;
-      background-color: #ff9e1e;
-      width: 4px;
-      height: 1.2rem;
-      border-radius: 0.8rem;
-      margin-right: 0.5rem;
-    }
-  `,
+
+    return <Blockquote>{values()}</Blockquote>;
+  },
   code: styled.code`
     color: #ffffff;
     background-color: #333333cf;
@@ -155,25 +197,26 @@ export const Components: MDComponents = toComponents({
     font-family: 'Roboto Mono', monospace;
   `,
   table: styled.table`
-	  margin: 0.5rem;
+    margin: 0.5rem;
     margin-bottom: 1rem;
   `,
   tr: styled.tr`
     text-align: center;
     line-height: 1.3;
-  `
+  `,
 });
 
 type StyledComponents = {
-  [key: string]: React.FC<any>
-}
-
+  [key: string]: React.FC<any>;
+};
 
 function toComponents(components: StyledComponents) {
-  return Object.entries(components).map((value) => {
-    var Component = value[1];
-    return {
-      [value[0]]: (props: any) => <Component {...props}/>
-    }
-  }).reduce((a1, a2) => ({...a1, ...a2}))
+  return Object.entries(components)
+    .map((value) => {
+      var Component = value[1];
+      return {
+        [value[0]]: (props: any) => <Component {...props} />,
+      };
+    })
+    .reduce((a1, a2) => ({ ...a1, ...a2 }));
 }
