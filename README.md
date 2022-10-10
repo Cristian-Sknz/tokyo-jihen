@@ -1,46 +1,29 @@
-# Getting Started with Create React App
+# Tokyo Incidents
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Um clone do Website da banda [Tokyo Jihen](https://tokyojihen.com/), utilizado para praticar as tecnologias de frontend com React e Styled Components (CSS in JS).
 
-## Available Scripts
+### Sobre
+Decidi fazer um clone do Website pois achei a ideia genial! O design do site combina muito com a historia da banda, uma TV com varios canais (isso faz referência ao nome dos albums). Implementei o conteudo do site como se fosse um 'Mock', caso fosse preciso receber uma API com todos os conteudos, seria facil de adaptar para isso.
 
-In the project directory, you can run:
+Decidi usar JSON para simular respostas de um backend ficticio e Markdown para textos e conteudos que não se adequadariam bem em JSON.
 
-### `npm start`
+![Peek 2022-10-10 14-34](https://user-images.githubusercontent.com/61399406/194925677-a0c3ba8c-966d-43f3-bc62-3006e560fe43.gif)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Como o design do site é uma TV, cada canal é uma pagina do website, são elas:
+- News
+- Discography
+  - Release
+  - Single
+  - Album
+  - DvD / Blu-ray
+  - Other
+- Live
+- Biography
+  - 椎名林檎 (Sheena Ringo :heart:)
+  - 亀田誠治 (Kameda Seiji)
+  - 刄田綴色 (Hata)
+  - 浮雲 (Ukigmo 🧹)
+  - 伊澤一葉 (Izawa Ichiyō)
+- Link
+- Movie
