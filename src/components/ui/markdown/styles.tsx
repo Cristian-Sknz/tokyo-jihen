@@ -91,6 +91,22 @@ export const Components: MDComponents = toComponents({
     gap: 0.3rem;
     padding-left: 1.8rem;
     margin-top: 0.4rem;
+    padding-left: 1.8rem;
+    &.arrow {
+      list-style: none;
+      padding-left: 0;
+      li {
+        ::before {
+          content: '▶';
+          color: #52545a;
+          font-size: 0.5rem;
+          vertical-align: middle;
+          display: inline-block;
+          margin-bottom: 0.2rem;
+          margin-right: 0.4rem;
+        }
+      }
+    }
   `,
   li: styled.li`
     ::marker {

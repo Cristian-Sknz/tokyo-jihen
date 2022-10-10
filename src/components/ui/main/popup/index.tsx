@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useImperativeHandle, useState } from 'react';
 import { PopupContainer } from './styled';
-import Markdown from '../../markdown';
+import Markdown, { MarkdownWrapper } from '../../markdown';
 import { useRemoteControl } from '../../remote-control/context';
 import classNames from 'classnames';
 import Loading from '../../../template/loading';
@@ -20,11 +20,11 @@ const Popup: PopupComponent = (props, ref) => {
 
   useEffect(() => {
     return () => {
-      toggle()
-      misc.setOverflow(true)
-    }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [toggle])
+      toggle();
+      misc.setOverflow(true);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [toggle]);
 
   const fetchMarkdown = useCallback(async (id: number) => {
     setLoading(true);
@@ -34,7 +34,7 @@ const Popup: PopupComponent = (props, ref) => {
   }, []);
 
   const close = useCallback(() => {
-    toggle()
+    toggle();
     setVisible(false);
     misc.setOverflow(true);
   }, [misc, toggle]);
@@ -42,7 +42,7 @@ const Popup: PopupComponent = (props, ref) => {
   const open = useCallback(
     (id: number) => {
       fetchMarkdown(id);
-      toggle(close)
+      toggle(close);
       setVisible(true);
       misc.setOverflow(false);
     },
@@ -58,7 +58,13 @@ const Popup: PopupComponent = (props, ref) => {
       className={classNames({ visible })}
       style={{ top: `${misc.main.current?.scrollTop || 0}px` }}
     >
-      {isLoading ? <Loading /> : <Markdown>{markdown}</Markdown>}
+      {isLoading ? (
+        <Loading />
+      ) : (
+        <MarkdownWrapper>
+          <Markdown>{markdown}</Markdown>
+        </MarkdownWrapper>
+      )}
     </PopupContainer>
   );
 };

@@ -7,6 +7,13 @@ import PageHeader from '../../components/template/page-title/header';
 
 export const DiscographyContainer = styled.div`
   background-color: #292929;
+  padding: 0 2rem;
+
+  @media screen and (max-width: 800px) {
+    &.release {
+      padding: 0 .8rem;
+    }
+  }
 `;
 
 export const DiscographyTitle = styled(PageHeader)`

@@ -1,0 +1,389 @@
+[
+  {
+    "name": "総合",
+    "content": "/content/disco/release/sougou.md",
+    "image": "/images/discography/singles/d20211119.jpg",
+    "steaming": null,
+    "shop": null,
+    "tables": [
+      {
+        "title": "曲目",
+        "subtitle": "オールタイムベストアルバム『総合』収録曲 Disc-1",
+        "songs": [
+          {
+            "name": "原罪と福音",
+            "streaming": []
+          },
+          {
+            "name": "群青日和",
+            "streaming": []
+          },
+          {
+            "name": "遭難",
+            "streaming": []
+          },          {
+            "name": "御祭騒ぎ",
+            "streaming": []
+          },
+          {
+            "name": "夢のあと",
+            "streaming": []
+          },
+          {
+            "name": "秘密",
+            "streaming": []
+          },
+          {
+            "name": "透明人間",
+            "streaming": []
+          },
+          {
+            "name": "スーパースター",
+            "streaming": []
+          },
+          {
+            "name": "修羅場",
+            "streaming": []
+          },
+          {
+            "name": "OSCA",
+            "streaming": []
+          },
+          {
+            "name": "キラーチューン",
+            "streaming": []
+          },
+          {
+            "name": "某都民",
+            "streaming": []
+          },
+          {
+            "name": "閃光少女",
+            "streaming": []
+          },
+          {
+            "name": "落日",
+            "streaming": []
+          },
+          {
+            "name": "ただならぬ関係",
+            "streaming": []
+          }
+        ]
+      },
+      {
+        "title": null,
+        "subtitle": "オールタイムベストアルバム『総合』収録曲 Disc-2 ",
+        "songs": [
+          {
+            "name": "仏だけ徒歩",
+            "streaming": []
+          },
+          {
+            "name": "勝ち戦",
+            "streaming": []
+          },
+          {
+            "name": "能動的三分間",
+            "streaming": []
+          },          {
+            "name": "生きる",
+            "streaming": []
+          },
+          {
+            "name": "天国へようこそ",
+            "streaming": []
+          },
+          {
+            "name": "ドーパミント！",
+            "streaming": []
+          },
+          {
+            "name": "新しい文明開化",
+            "streaming": []
+          },
+          {
+            "name": "女の子は誰でも",
+            "streaming": []
+          },
+          {
+            "name": "空が鳴っている",
+            "streaming": []
+          },
+          {
+            "name": "今夜はから騒ぎ",
+            "streaming": []
+          },
+          {
+            "name": "選ばれざる国民",
+            "streaming": []
+          },
+          {
+            "name": "うるうるうるう",
+            "streaming": []
+          },
+          {
+            "name": "赤の同盟",
+            "streaming": []
+          },
+          {
+            "name": "緑酒",
+            "streaming": []
+          },
+          {
+            "name": "永遠の不在証明",
+            "streaming": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "音楽",
+    "content": "/content/disco/release/ongaku.md",
+    "image": "/images/discography/album/upch20568.jpg",
+    "steaming": "https://lnk.to/tjmusicWE",
+    "shop": "https://lnk.to/tjmusicshopWE",
+    "tables": [
+      {
+        "title": "曲目",
+        "subtitle": "CDアルバム『音楽』収録曲",
+        "songs": [
+          {
+            "name": "孔雀",
+            "streaming": []
+          },
+          {
+            "name": "毒味",
+            "streaming": []
+          },
+          {
+            "name": "紫電",
+            "streaming": []
+          },          {
+            "name": "命の帳",
+            "streaming": []
+          },
+          {
+            "name": "黄金比",
+            "streaming": []
+          },
+          {
+            "name": "青のＩＤ",
+            "streaming": []
+          },
+          {
+            "name": "闇なる白",
+            "streaming": []
+          },
+          {
+            "name": "赤の同盟",
+            "streaming": []
+          },
+          {
+            "name": "銀河民",
+            "streaming": []
+          },
+          {
+            "name": "獣の理",
+            "streaming": []
+          },
+          {
+            "name": "緑酒",
+            "streaming": []
+          },
+          {
+            "name": "薬漬",
+            "streaming": []
+          },
+          {
+            "name": "一服",
+            "streaming": []
+          }
+        ]
+      },
+      {
+        "title": null,
+        "subtitle": "初回生産限定盤バンドルCD\nマキシシングル『赤の同盟』収録曲",
+        "songs": [
+          {
+            "name": "赤の同盟",
+            "streaming": []
+          },
+          {
+            "name": "名実共に",
+            "streaming": []
+          },
+          {
+            "name": "玉座の罠",
+            "streaming": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "永遠の不在証明",
+    "content": "/content/disco/release/news.md",
+    "image": "/images/discography/album/upch29360.png",
+    "steaming": "https://lnk.to/tjtsabdWE",
+    "shop": null,
+    "tables": [{
+      "title": "曲目",
+      "subtitle": "CDアルバム『音楽』収録曲",
+      "songs": [
+        {
+          "name": "永遠の不在証明」　　＜劇場版『名探偵コナン 緋色の弾丸』主題歌＞\n作詞作曲　椎名林檎\n編曲　東京事変",
+          "streaming": []
+        },
+        {
+          "name": "永遠の不在証明 - The Scarlet KARAOKE-",
+          "streaming": []
+        }]
+    }]
+  },
+  {
+    "name": "２Ｏ２Ｏ.７.２４閏vision特番ニュースフラッシュ",
+    "content": "/content/disco/release/news_flash.md",
+    "image": "/images/discography/dvd/upxh29046.jpg",
+    "steaming": null,
+    "shop": "https://emi-records-japan.lnk.to/YiI4hHWE",
+    "tables": [{
+      "title": "曲目",
+      "subtitle": "[収録概要]\n２Ｏ２Ｏ.７.２４閏vision特番ニュースフラッシュ\n於）東京・NHKホール",
+      "songs": [
+        {
+          "name": "新しい文明開化",
+          "streaming": []
+        },
+        {
+          "name": "群青日和",
+          "streaming": []
+        },
+        {
+          "name": "某都民",
+          "streaming": []
+        },
+        {
+          "name": "選ばれざる国民",
+          "streaming": []
+        },
+        {
+          "name": "復讐",
+          "streaming": []
+        },
+        {
+          "name": "永遠の不在証明",
+          "streaming": []
+        },
+        {
+          "name": "絶体絶命",
+          "streaming": []
+        },
+        {
+          "name": "修羅場",
+          "streaming": []
+        },
+        {
+          "name": "能動的三分間",
+          "streaming": []
+        },
+        {
+          "name": "電波通信",
+          "streaming": []
+        },
+        {
+          "name": "スーパースター",
+          "streaming": []
+        },
+        {
+          "name": "乗り気",
+          "streaming": []
+        },
+        {
+          "name": "閃光少女",
+          "streaming": []
+        },
+        {
+          "name": "キラーチューン",
+          "streaming": []
+        },
+        {
+          "name": "今夜はから騒ぎ",
+          "streaming": []
+        },
+        {
+          "name": "ＯＳＣＡ",
+          "streaming": []
+        },
+        {
+          "name": "ＦＯＵＬ",
+          "streaming": []
+        },
+        {
+          "name": "勝ち戦",
+          "streaming": []
+        },
+        {
+          "name": "透明人間",
+          "streaming": []
+        },
+        {
+          "name": "空が鳴っている",
+          "streaming": []
+        }
+      ]
+    },
+    {
+      "title": null,
+      "subtitle": "[特典映像]\n＜academic view２Ｏ２Ｏ＞\n※ステージ全景定点観測映像",
+      "songs": [
+        {
+          "name": "新しい文明開化",
+          "streaming": []
+        },
+        {
+          "name": "某都民",
+          "streaming": []
+        },
+        {
+          "name": "選ばれざる国民",
+          "streaming": []
+        },
+        {
+          "name": "復讐",
+          "streaming": []
+        },
+        {
+          "name": "絶体絶命",
+          "streaming": []
+        },
+        {
+          "name": "能動的三分間",
+          "streaming": []
+        },
+        {
+          "name": "電波通信",
+          "streaming": []
+        },
+        {
+          "name": "今夜はから騒ぎ",
+          "streaming": []
+        },
+        {
+          "name": "ＯＳＣＡ",
+          "streaming": []
+        },
+        {
+          "name": "勝ち戦",
+          "streaming": []
+        },
+        {
+          "name": "空が鳴っている",
+          "streaming": []
+        }
+      ]
+    }
+  ]
+  }
+]

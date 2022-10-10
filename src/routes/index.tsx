@@ -21,7 +21,7 @@ const Routes: React.FC = () => {
         <Route path={'/'} element={<News/>} />
 
         <Route path={'/discography'} element={<Discography />}>
-          <Route element={<DiscographyRelease/>} />
+          <Route path={''} element={<DiscographyRelease/>} />
           <Route path={'single'} element={<DiscographySingle />} />
           <Route path={'album'} element={<DiscographyAlbum />} />
           <Route path={'dvd'} element={<DiscographyDvD />} />

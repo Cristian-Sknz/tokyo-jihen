@@ -3,23 +3,21 @@ import React from 'react';
 import rehypeRaw from 'rehype-raw';
 import remarkBreaks from 'remark-breaks';
 import remarkGfm from 'remark-gfm';
-import ReactMarkdown, { Options } from 'react-markdown'
+import ReactMarkdown, { Options } from 'react-markdown';
 import { MarkdownWrapper, Components } from './styles';
 
-type MarkdownProps = Options;
-
-const Markdown: React.FC<MarkdownProps> = (props) => {
+const Markdown: React.FC<Options> = ({ ...props }) => {
   return (
-    <MarkdownWrapper>
-      <ReactMarkdown {...props} 
-        components={Components}
-        remarkPlugins={[remarkBreaks, remarkGfm]}
-        rehypePlugins={[rehypeRaw]}
-        >
-        {(props.children as string)}
-      </ReactMarkdown>
-    </MarkdownWrapper>
+    <ReactMarkdown
+      {...props}
+      components={{ ...Components, ...props.components }}
+      remarkPlugins={[remarkBreaks, remarkGfm]}
+      rehypePlugins={[rehypeRaw]}
+    >
+      {props.children as string}
+    </ReactMarkdown>
   );
 };
 
-export default Markdown; 
+export { MarkdownWrapper };
+export default Markdown;
