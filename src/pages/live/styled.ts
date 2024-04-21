@@ -5,7 +5,9 @@ export const LiveContainer = styled.div`
   background-color: #292929;
 `;
 
-export const LiveList = styled.ul``;
+export const LiveList = styled.ul`
+  ${WidthLimiter}
+`;
 
 export const ArrowIconContainer = styled.div`
   min-width: 2rem;

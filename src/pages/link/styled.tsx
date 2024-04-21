@@ -1,7 +1,10 @@
 import classNames from 'classnames';
 import styled from 'styled-components';
+import { WidthLimiter } from '../../styles';
 
-export const LinkContainer = styled.div``;
+export const LinkContainer = styled.div`
+  ${WidthLimiter}
+`;
 
 export const ListContainer = styled.div`
   color: white;

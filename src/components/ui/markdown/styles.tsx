@@ -9,15 +9,22 @@ type HeadingType = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
 export const MarkdownWrapper = styled.article`
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  
   font-family: Noto Sans JP, sans-serif;
+
   color: white;
   padding: 1rem 1.5rem;
   padding-top: 2.8rem;
+  width: 1300px;
 
   & *:is(h1, h2, h3, h4, h5, h6) {
     font-family: Poppins;
     line-height: 2;
+  }
+
+  @media (max-width: 1300px)  {
+    align-items: flex-start;
+    width: auto;
   }
 `;
 

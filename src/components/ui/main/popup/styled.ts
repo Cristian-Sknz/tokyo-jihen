@@ -4,7 +4,14 @@ import { ScrollbarCSS } from '../../../../styles';
 export const PopupContainer = styled.div`
   ${ScrollbarCSS}
   &.visible {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+
+    @media (max-width: 1300px)  {
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
   }
   display: none;
   width: 100%;

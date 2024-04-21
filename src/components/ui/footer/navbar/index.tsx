@@ -16,7 +16,7 @@ import { LinkElementProps } from '../../../template/link';
 export const NavbarItem: React.FC<LinkElementProps> = (props) => {
   return (
     <NavigationItemContainer>
-      <NavigationLink {...props}>
+      <NavigationLink {...props as any}>
         {props.children}
       </NavigationLink>
     </NavigationItemContainer>

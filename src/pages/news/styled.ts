@@ -1,10 +1,13 @@
 import styled from 'styled-components';
+import { WidthLimiter } from '../../styles';
 
 export const NewsContainer = styled.div`
   background-color: #292929;
 `;
 
-export const NewsList = styled.ul``;
+export const NewsList = styled.ul`
+  ${WidthLimiter}
+`;
 
 export const PlayIcon = styled.div`
   min-width: 2rem;

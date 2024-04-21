@@ -1,10 +1,12 @@
 import styled from 'styled-components';
+import { WidthLimiter } from '../../styles';
 
 export const BiographyContainer = styled.div`
   background-color: #292929;
 `;
 
 export const BiographyTextContainer = styled.div`
+${WidthLimiter}
   padding: 1rem 1.1rem;
 `;
 
@@ -16,7 +18,9 @@ export const BiographyText = styled.p`
   line-height: 1.45;
 `;
 
-export const BiographyMembersContainer = styled.div``;
+export const BiographyMembersContainer = styled.div`
+  ${WidthLimiter}
+`;
 
 export const BiographyMembers = styled.ul`
   margin: 1rem;

@@ -4,19 +4,35 @@ import { LinkContainer, LinkItemWithIcon } from './styled';
 import LinkList from './title';
 import JihenLinks from '../../assets/links.json';
 
-function removeDuplicates<T>(array: T[]) {
-  return array.filter((elem, index, self) => index === self.indexOf(elem));
+
+type LinkItemType = Omit<typeof JihenLinks[number], ''>;
+
+function groupsBy<T>(items: Array<T>, keyExtractor: (item: T) => string) {
+  var map = {} as { [key: string]: T[]};
+  for (var item of items) {
+    var key = keyExtractor(item);
+    
+    if (Object.hasOwn(map, key)) {
+      map[key] = [...map[key], item]
+      continue;
+    }
+
+    map[key] = item == null ? [] : [item]
+  }
+
+  return map;
 }
 
+
 const Link: React.FC = () => {
-  const groups = removeDuplicates(JihenLinks.map((item) => item.group));
+  const groups = groupsBy<LinkItemType>(JihenLinks, (item) => item.group);
 
   return (
     <LinkContainer>
       <PageHeader title='Link' />
-      {groups.map((group) => (
-        <LinkList title={group}>
-          {JihenLinks.filter((item) => item.group === group).map((item) => (
+      {Object.entries(groups).map(([str, obj]) => (
+        <LinkList title={str}>
+            {obj.map((item) => (
             <LinkItemWithIcon icon={item.icon} href={item.link}>
               {item.text}
             </LinkItemWithIcon>

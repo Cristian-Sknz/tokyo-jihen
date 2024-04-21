@@ -41,6 +41,7 @@ export const DiscoImage = styled.img`
   display: block;
   width: auto;
   max-height: 170px;
+
   margin: 0 auto;
 `;
 
